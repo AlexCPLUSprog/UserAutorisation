@@ -1,0 +1,44 @@
+﻿<Window x:Class="UserAutorisation.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UserAutorisation"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
+    <Grid x:Name="myGrid" ShowGridLines="True">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBox x:Name="inputPassword" Grid.Row="2" Grid.Column="2"
+                 Text="Пароль" FontSize="14"
+                 VerticalAlignment="Top"/>
+        <Button x:Name="showPassword" Grid.Row="2" Grid.Column="2"
+                Content="Показать" FontSize="14"
+                VerticalAlignment="Bottom"
+                Click="showPassword_Click"/>
+        <Button x:Name="eye" Grid.Row="2" Grid.Column="3"
+                Content="Показать" FontSize="14"
+                VerticalAlignment="Stretch" PreviewMouseLeftButtonDown="eye_PreviewMouseLeftButtonDown" PreviewMouseLeftButtonUp="eye_PreviewMouseLeftButtonUp" Background="#FFF9B7B7"
+               >            
+        </Button>
+
+    </Grid>
+</Window>
