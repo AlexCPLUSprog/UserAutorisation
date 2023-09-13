@@ -59,8 +59,9 @@ namespace UserAutorisation
         }
 
         private void eye_PreviewMouseLeftButtonUp(object sender, MouseButtonEventArgs e)
-        {
+        {            
             _maskedTextBox.PasswordChar = '*';
+            inputPassword.Text = "\0";
         }
     }
 }
